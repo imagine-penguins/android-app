@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhyChoseUs"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolbar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="@color/black"
+            app:title="About Us"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/startupproooo">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light"
+                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trast"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/introfour"
+            android:src="@drawable/vliveee"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introfive"
+            android:layout_below="@id/introfour"
+            android:text="V Live India Pvt. Ltd.  is a company that is evolving in nearly every current field. We started with a DTH manufacturing unit and are now focusing in being one of the top brands in India for electronics. Be it DTH, CCTV cameras, Home theaters, LED’s, we have it all.
+Other than electronics we have entered the world of Media by organizing –Upcoming Star/Model launches, Music Video and Event promotions, Social Media,  Weekly newsletters, etc.
+We have recently launched “V Live Plus Magazine” which is a Fashion and Lifestyle Magazine and is available at all the INDIAN AIRPORTS."
+            android:textSize="15sp"
+            android:paddingStart="15dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introsix"
+            android:layout_below="@id/introfive"
+            android:text="Our Recognition"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingStart="15dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introseven"
+            android:layout_below="@id/introsix"
+            android:text="1) V Live India was recently awarded as the “Best DTH of 2018” by Startup India Association."
+            android:textSize="15sp"
+            android:paddingStart="15dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introeight"
+            android:layout_below="@id/introseven"
+            android:text="2) V Live India is the 1st company to launch IP TV in India."
+            android:textSize="15sp"
+            android:paddingStart="15dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:paddingRight="10dp"
+            />
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>

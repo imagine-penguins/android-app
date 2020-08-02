@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhyChoseUs"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolbar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="@color/black"
+            app:title="Process"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/startupproooo">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light"
+                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abstr"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prf"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:text="We, at V Live India  are delighted and honored to announce our New Project STARTUP PRO CHALLENGE along with our  associate partner team Aditia Reality Pvt. Ltd. to Encourage and  Support StartUps of India."
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/procf"
+            android:layout_below="@id/prf"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:text="Step 1"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/processf"
+            android:layout_below="@id/procf"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:text="After filling the registration form on the app you will get the confirmation email including event venue, timings and other details"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prcf"
+            android:layout_below="@id/processf"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:text="Step 2"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prcf"
+            android:id="@+id/processse"
+            android:gravity="left"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:text="On the day of event the expert  panel of V Live India will review each StartUp project (time duration of review would be 20mins each), and short list 10 StartUps."
+            />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ocf"
+            android:layout_below="@id/processse"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:text="Step 3"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/processt"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentStart="true"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:layout_below="@id/ocf"
+            android:textSize="15sp"
+            android:text="Shortlisted 10 StartUps would present their business/idea in front of the Jury and Top 3 Winners in the competition would be rewarded."
+            />
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

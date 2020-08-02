@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#706C6C"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/imgrr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="REGISTER HERE"
+            />
+
+        <TextView
+            android:id="@+id/TextViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Full Name :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Designation :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/EditTextDesignation"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email ID :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextEmail"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewmobileno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact Number:"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextmobileno"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewcompanyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Company Name:"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextcompanyname"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewcompanywebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Company Website :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextcompanywebsite"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextViewcompanyaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Company Address :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextcompanyaddress"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:layout_width="fill_parent">
+        </EditText>
+
+
+        <TextView
+            android:id="@+id/TextViewcompanytype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Company Type :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+        <Spinner
+            android:id="@+id/SpinnercompanyType"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:prompt="@string/company_prompt"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:entries="@array/company_arrays">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/TextViewyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Year of Establishment :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/Spinneryear"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:prompt="@string/year_prompt"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:entries="@array/year_arrays">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/TextViewannual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Annual Turnover :"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+        <Spinner
+            android:id="@+id/Spinnerannualturnover"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:prompt="@string/turnover_prompt"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:entries="@array/turnover_arrays">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/TextViewdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Company Description:"
+            android:textColor="@color/white"
+            android:textSize="10pt">
+        </TextView>
+        <EditText
+            android:id="@+id/EditTextdescription"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:background="@color/white"
+            android:layout_width="fill_parent">
+        </EditText>
+
+        <Button
+            android:id="@+id/submitt"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Submit"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

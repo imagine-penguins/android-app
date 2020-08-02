@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#414141</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+
+    <color name="colory">#ffffb3</color>
+    <color name="coloryy">#ffd700</color>
+    <color name="coloryyy">#ff8e00</color>
+    <color name="toolbar">#161616</color>
+
+    <color name="plus">#754cce</color>
+    <color name="fb">#038bfa</color>
+    <color name="call">#4f9eff</color>
+    <color name="whatsapp">#05fa4b</color>
+
+
+    <color name="lightblue">#3ce4de</color>
+    <color name="purewhite">#fff</color>
+    <color name="florogreen">#4fe713</color>
+
+
+    <color name="dots_dark_screen1">#faf7f7</color>
+    <color name="dots_dark_screen2">#faf7f7</color>
+    <color name="dots_dark_screen3">#faf7f7</color>
+
+    <color name="dots_light_screen1">#bcbaba</color>
+    <color name="dots_light_screen2">#bcbaba</color>
+    <color name="dots_light_screen3">#bcbaba</color>
+
+    <array name="dot_on_page_active">
+        <item>@color/dots_light_screen1</item>
+        <item>@color/dots_light_screen2</item>
+        <item>@color/dots_light_screen3</item>
+
+    </array>
+    <array name="dot_on_page_not_active">
+        <item>@color/dots_dark_screen1</item>
+        <item>@color/dots_dark_screen2</item>
+        <item>@color/dots_dark_screen3</item>
+    </array>
+
+</resources>

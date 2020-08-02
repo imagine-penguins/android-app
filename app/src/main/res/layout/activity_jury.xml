@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhyChoseUs"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolbar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="@color/black"
+            app:title="Jury"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/startupproooo">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light"
+                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jkjkj"
+        android:layout_marginBottom="100dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+
+        <RelativeLayout
+            android:id="@+id/ch"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chieff"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Chief Guest"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/imgchief"
+                android:layout_width="200dp"
+                android:layout_below="@id/chieff"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/neh"/>
+
+            <TextView
+                android:id="@+id/namechief"
+                android:layout_below="@id/imgchief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="2dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="Mr. Neh Srivastava"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/postchief"
+                android:layout_below="@id/namechief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:text="President"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/placechief"
+                android:layout_below="@id/postchief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:text="Central Secretariat Services Officers Society"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chg"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ch"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chiefff"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="Brand Ambassador"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgchieff"
+                    android:layout_width="200dp"
+                    android:layout_below="@id/chiefff"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sushilha"/>
+
+                <TextView
+                    android:id="@+id/namechieff"
+                    android:layout_below="@id/imgchieff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:text="Sushil Kumar Solanki"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/postchieff"
+                    android:layout_below="@id/namechieff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Indian Freestyle Wrestler"
+                    android:gravity="center"/>
+
+
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/chg"
+            android:id="@+id/firstsecond"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ju"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="Jury"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ju"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfirst"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/axs"/>
+
+                <TextView
+                    android:id="@+id/namefirst"
+                    android:layout_below="@id/imgfirst"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:text="Miss. Ranjana Sharma "
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/postfirst"
+                    android:layout_below="@id/namefirst"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="HR Head"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/placefirst"
+                    android:layout_below="@id/postfirst"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Axis bank"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ju"
+                >
+                <ImageView
+                    android:id="@+id/imgsecond"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vaandanaha"/>
+                <TextView
+                    android:id="@+id/namesecond"
+                    android:layout_below="@id/imgsecond"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:text="CA Vandana Chaudhary"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/postsecond"
+                    android:layout_below="@id/namesecond"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Member ICAI"
+                    android:gravity="center_horizontal"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/thirdfour"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/firstsecond"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/imgthird"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sandeshha"/>
+
+                <TextView
+                    android:id="@+id/namethird"
+                    android:layout_below="@id/imgthird"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="Mr. Sandesh Yadav"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/postthird"
+                    android:layout_below="@id/namethird"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="General Secretary"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/placethird"
+                    android:layout_below="@id/postthird"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Bharat Gaurav Award Foundation"
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fivesix"
+            android:layout_below="@id/thirdfour"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgfive"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/samir"/>
+
+                <TextView
+                    android:id="@+id/namefive"
+                    android:layout_below="@id/imgfive"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:text="Samir Suri"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/postfive"
+                    android:layout_below="@id/namefive"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="CEO - Pure Pro-Airbrush Cosmetics"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/placefive"
+                    android:layout_below="@id/postfive"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="United States"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/imgsix"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pppphh"/>
+                <TextView
+                    android:id="@+id/namesix"
+                    android:layout_below="@id/imgsix"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:text="Phillip Hunter"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/postsix"
+                    android:layout_below="@id/namesix"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Director- Kingvon Ltd."
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/placesix"
+                    android:layout_below="@id/postsix"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="China"
+                    android:gravity="center_horizontal"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seveneight"
+            android:layout_below="@id/fivesix"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ourexe"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="OUR EXPERT PANEL"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ourexetwo"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_below="@id/ourexe"
+                android:text="V Live India Team Panel"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:layout_centerHorizontal="true"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ourexetwo"
+                >
+
+                <ImageView
+                    android:id="@+id/imgseven"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentStart="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/manishha"/>
+
+                <TextView
+                    android:id="@+id/nameseven"
+                    android:layout_below="@id/imgseven"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:text="Manish Sharma"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/postseven"
+                    android:layout_below="@id/nameseven"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Director"
+                    android:gravity="center_horizontal"/>
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ourexetwo"
+                >
+                <ImageView
+                    android:id="@+id/imgeight"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sonuuuuha"/>
+                <TextView
+                    android:id="@+id/nameeight"
+                    android:layout_below="@id/imgeight"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/black"
+                    android:text="Sonu Sharma"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/posteight"
+                    android:layout_below="@id/nameeight"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Director"
+                    android:gravity="center_horizontal"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nine"
+            android:layout_below="@id/seveneight"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgnine"
+                    android:layout_width="135dp"
+                    android:layout_height="135dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/diljeetha"/>
+
+                <TextView
+                    android:id="@+id/namenine"
+                    android:layout_below="@id/imgnine"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:text="Diljeet Dogra"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/postnine"
+                    android:layout_below="@id/namenine"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Director"
+                    android:gravity="center"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>>
+
+</android.support.design.widget.CoordinatorLayout>

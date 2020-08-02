@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhyChoseUs"
+    android:background="#fcfcfc">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jkjkj"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:textSize="16sp"
+            android:scaleType="fitXY"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:id="@+id/awardone"
+            android:src="@drawable/kipido"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutone"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/awardone">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentaxis"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                app:cardPreventCornerOverlap="false"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/awardaxis"
+                android:background="@drawable/gardiwaxis"
+                android:text="1. Axis Bank"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                />
+
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:background="#ffff"
+                android:id="@+id/jhb"
+                android:layout_below="@id/contentaxis"
+                android:layout_marginTop="-5dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Funding of Upto Rs. 5 Lakhs would be given to the winner of the competition from Axis Bank."/>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/conte"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:clipToPadding="false"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/jhb"
+                android:clipChildren="false"
+                app:cardPreventCornerOverlap="false"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/awardcowork"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/gardiwaxis"
+                android:text="2. V Live"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="-5dp"
+                android:gravity="left"
+                android:layout_below="@+id/conte"
+                android:background="#ffff"
+                android:id="@+id/contentcowork"
+                android:textColor="@color/colorPrimary"
+                android:text="Top 3 Winners will get office location and investment of upto Rs. 20 Lakhs by V Live India Pvt. Ltd. and Aditia Reality Pvt. Ltd. to help them in the smooth functioning of their StartUps"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layouttwo"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:layout_below="@id/layoutone">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/conter"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                app:cardPreventCornerOverlap="false"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/awardvlivemagzine"
+                android:background="@drawable/gardiwaxis"
+                android:text="3. Expert Panel"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:background="#ffff"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_marginTop="-5dp"
+                android:layout_below="@id/conter"
+                android:id="@+id/contentvlivemagzine"
+                android:textColor="@color/colorPrimary"
+                android:text="Business Consultation to increase your profit margins by our Professional Expert Team."/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutthree"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/layouttwo">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contermag"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_marginTop="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/awardexpert"
+                android:background="@drawable/gardiwaxis"
+                android:text="4. Magazine"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:fontFamily="sans-serif"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_below="@id/contermag"
+                android:background="#ffff"
+                android:id="@+id/contentexpert"
+                android:textColor="@color/colorPrimary"
+                android:text="50% discount on full page commercials and FREE 2-page story coverage of your StartUp in our V Live Plus Magazine which is available at all Airports in India."/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentrt"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:layout_below="@id/contentexpert"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                app:cardPreventCornerOverlap="false"
+                app:cardCornerRadius="4dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="2dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/contentexpert"
+                android:id="@+id/awardhello"
+                android:background="@drawable/gardiwaxis"
+                android:text="5. Hello Comm ."
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_below="@id/contentrt"
+                android:layout_marginTop="-5dp"
+                android:id="@+id/contenthello"
+                android:textColor="@color/colorPrimary"
+                android:background="#ffff"
+                android:text="Invest of upto 5 lakhs would be done by Hello Communications Pvt. Ltd. for the StartUp that wins the challenge."/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutfour"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/layoutthree">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentrtbb"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0.0px"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                app:cardPreventCornerOverlap="false"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                android:layout_marginTop="10dp"
+                android:elevation="8dp"
+                app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/awardspice"
+                android:text="6.SpiceJet"
+                android:background="@drawable/gardiwaxis"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:fontFamily="sans-serif"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="-5dp"
+                android:gravity="left"
+                android:layout_below="@id/contentrtbb"
+                android:id="@+id/contentSpice"
+                android:textColor="@color/colorPrimary"
+                android:background="#ffff"
+                android:text="Awesome SpiceJet Travel Vouchers"/>
+
+
+        </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/regg"
+                android:layout_width="250dp"
+                android:layout_height="90dp"
+                android:background="@drawable/yaeee"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/layoutfour"
+                android:layout_marginTop="20dp"
+                />
+
+
+            <RelativeLayout
+                android:layout_below="@id/regg"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"></RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>

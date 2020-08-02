@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/icon"
+            android:title="Awards For You"
+
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gear"
+            android:title="Our Process"
+            />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/iconnn"
+            android:title="Our Jury"
+            />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/videocamera"
+            android:title="Our Media And Partners"
+            />
+
+        <item
+            android:id="@+id/nav_pri"
+            android:icon="@drawable/priviiic"
+            android:title="Privacy Policy"
+            />
+
+        <item
+            android:id="@+id/register"
+            android:icon="@drawable/clipboard"
+            android:title="Register  Now" />
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/mail"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolbar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="@color/black"
+            app:title="Contact Us"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/startupproooo">
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light"
+                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/add"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="602, 6th floor, Vishwadeep Tower, District Center, Janakpuri West, New Delhi - 110058"
+                android:textSize="15sp"
+                android:layout_below="@id/add"
+                android:id="@+id/atrsvs"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email-Us"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/adds"
+                android:textColor="@color/black"
+                android:layout_below="@id/atrsvs"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="info@startupproindia.com"
+                android:textSize="15sp"
+                android:layout_below="@id/adds"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/mob"
+                android:textColor="@color/black"
+                android:layout_below="@id/adds"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+91 8826 836 995"
+                android:textSize="16sp"
+                android:id="@+id/ghghg"
+                android:layout_below="@id/mob"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/website"
+                android:textColor="@color/black"
+                android:layout_below="@id/ghghg"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="http://www.startupproindia.com/"
+                android:textSize="16sp"
+                android:layout_below="@id/website"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif"
+                android:layout_marginStart="20dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

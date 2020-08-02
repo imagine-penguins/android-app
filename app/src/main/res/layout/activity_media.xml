@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhyChoseUs"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolbar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="@color/black"
+            app:title="Media"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/startupproooo">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light"
+                app:layout_collapseMode="pin"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sds"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Partner"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pp"/>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/pp"
+            android:id="@+id/ppiu"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/aditialogo"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:layout_below="@id/ppiu"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ppm"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cd"
+            android:layout_below="@id/ppm"
+            android:layout_centerHorizontal="true"
+            >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/ppone"
+            android:layout_marginStart="150dp"
+
+            android:background="@drawable/ione"
+            />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/pptwo"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/itwo"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ssd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cd"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/ppthree"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="150dp"
+            android:background="@drawable/ithree"
+            />
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/ppf"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="150dp"
+            android:background="@drawable/ifour"
+            />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ssd"
+            android:id="@+id/pfo"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ifive"
+            />
+
+
+
+        </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

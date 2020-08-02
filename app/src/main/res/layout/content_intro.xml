@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Intro"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:showIn="@layout/app_bar_intro">
+
+
+
+    <RelativeLayout
+        android:id="@+id/dd"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+        <android.support.v7.widget.CardView
+            android:id="@+id/ccview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewflipper"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                android:inAnimation="@anim/in"
+                android:outAnimation="@anim/out"
+
+                >
+
+
+
+                <ImageView
+                    android:id="@+id/freepick"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/b"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/freedeli"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/a"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/exexserv"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/c"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:id="@+id/fastdelive"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:src="@drawable/d"
+                    android:scaleType="fitXY"/>
+
+
+            </ViewFlipper>
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dd">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_H"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        >
+
+
+
+    </android.support.v7.widget.RecyclerView>
+
+        </ScrollView>
+
+
+
+</RelativeLayout>
+

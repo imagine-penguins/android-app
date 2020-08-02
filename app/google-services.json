@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "1053586784496",
+    "firebase_url": "https://startuppro-dec0b.firebaseio.com",
+    "project_id": "startuppro-dec0b",
+    "storage_bucket": "startuppro-dec0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053586784496:android:f120920d8fe6520a",
+        "android_client_info": {
+          "package_name": "com.startuppro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053586784496-25gset49utkpk0goaq5afau3aho4aud8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startuppro",
+            "certificate_hash": "dc410eadba40442ebb57fd229283913bf5402759"
+          }
+        },
+        {
+          "client_id": "1053586784496-fnabs8sttdu5gcntb1jcsr6jidmtfcvv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startuppro",
+            "certificate_hash": "a3b47dad95bbcd87f987594da53189df7f1722b1"
+          }
+        },
+        {
+          "client_id": "1053586784496-6bibnq2icsna8eehgm3sh85a3heq6n6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.startuppro",
+            "certificate_hash": "6033d1d0322e6d428bacc2ce37bc1d1585b90edb"
+          }
+        },
+        {
+          "client_id": "1053586784496-9k43g6449uml5edro4frc6c5p6mi5ohi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaF68SyikIfhyRdBEyqi6r4B4EjKx9yl0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053586784496-9k43g6449uml5edro4frc6c5p6mi5ohi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

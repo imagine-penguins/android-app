@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">StartupPro</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="introtxt">Settings</string>
+    <string name="introtxts">Settings</string>
+
+    <string name="input_error_name">name required</string>
+    <string name="input_error_email">email required</string>
+    <string name="input_error_password">password required</string>
+    <string name="input_error_phone">phone required</string>
+    <string name="input_error_password_length">password should be atleast 6 characters long</string>
+    <string name="input_error_phone_invalid">enter a valid phone number</string>
+    <string name="registration_success">Registered Successfully</string>
+    <string name="input_error_email_invalid">enter a valid email</string>
+
+
+    <string name="company_prompt">Choose a Company Type</string>
+    <string-array name="company_arrays">
+        <item>Proprietorship</item>
+        <item>Partnership</item>
+        <item>Private Limited</item>
+    </string-array>
+
+    <string name="year_prompt">Choose a Company Type</string>
+    <string-array name="year_arrays">
+        <item>0 to 1 years</item>
+        <item>1 to 5 years</item>
+        <item>5 to 10 year</item>
+        <item>More than 10 year</item>
+    </string-array>
+
+    <string name="turnover_prompt">Choose a Company Type</string>
+    <string-array name="turnover_arrays">
+        <item>0 to 10 Lakhs</item>
+        <item>10 to 50 Lakhs</item>
+        <item>50 Lakhs to 1 Crore</item>
+        <item>More than 1 Crore</item>
+    </string-array>
+
+</resources>
+

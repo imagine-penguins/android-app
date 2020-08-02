@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyPolicy"
+    android:background="#fcfcfc">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsingtoolbar"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="@color/black"
+            app:title="PrivacyPolicy"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/startupproooo">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light"
+                app:layout_collapseMode="pin">
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/abstr"
+        android:layout_marginBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/ghgy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            >
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/procf"
+                android:layout_below="@id/prf"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:text="COPYRIGHT POLICY"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/processf"
+                android:layout_below="@id/procf"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:text="If you wish to reproduce the material that has been shared on  StartUp Pro Challengeapp, then you can do so free of charge by taking permission on email from us. In this case, you will need to make sure that the material is reproduced in such a manner that the meaning remains same, it should not be used in offensive manner or in a misleading way. Each time you share the material, please ensure that the source is mentioned. This is also to bring in your notice that the permission will not be given for the material which is a copyright of the third party, the permission for the same will have to be obtained from the concerned party itself."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prcf"
+                android:layout_below="@id/processf"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:text="HYPERLINKING POLICY"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prcf"
+                android:id="@+id/processse"
+                android:gravity="left"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:text="Links to external portals/websites"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/processt"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_below="@id/processse"
+                android:textSize="15sp"
+                android:text="Under this portal, you will find links that connects you to different websites or portals. These links have only been placed for the convenience purpose. StartUP Pro Challenge will not be responsible or reliable for any of the contents available on such portals or the linked websites. It is not necessary that it has endorsed the ideas or views that have been expressed on these linked websites or portals. The presence of these links should not be considered or assumed to be endorsed by this app. There is no guarantee of their working neither any control on their availability."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/processt"
+                android:id="@+id/processtro"
+                android:gravity="left"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:text="Links to StartUp Pro Challenge App by others"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/proq"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_below="@id/processtro"
+                android:textSize="15sp"
+                android:text="There is absolutely no problem if you are reaching our portal through links found on other websites, no permission is to be taken in this regard. However, please let us know the source that has led you to this portal so that we can inform you about applicability of any charges or updates. We don’t allow the loading of our portal on your site. Make sure that its pages are been opened in the user’s new browser window."/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/proq"
+                android:id="@+id/processtrot"
+                android:gravity="left"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="PRIVACY POLICY"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/proqh"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:layout_below="@id/processtrot"
+                android:textSize="15sp"
+                android:text="StartUp Pro Challenge does not automatically store your personal information such as name, email address, phone number which allows us to identify your individuality. In case your personal details are asked on this portal, then you will be duly informed about the reasons for which it is taken and the same will be duly protected as a result of the security measures taken. Any personally identifiable information submitted by you on this portal is not sold to any third party. All the information provided here will be protected from any kind of misuse, loss, alteration, unauthorized access, disclosure, and destruction. We do gather some specific information of the user which includes domain name, operating system, Internet protocol address, browser type, time and date of visit and the pages visited. No attempts are made to link these addresses with the individual’s identity who visit our website unless some harmful attempts have been detected to damage the app."/>
+
+            <RelativeLayout
+                android:layout_below="@id/proqh"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="100dp">
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
