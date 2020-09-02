@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-aut
+    o"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/expandableButton1"
+        app:cardPreventCornerOverlap="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="10dp"
+            android:background="@drawable/timedas"
+            android:orientation="vertical"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:paddingRight="15dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            >
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:drawableTint="@color/white"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/droparrow"
+                android:text="CALENDAR"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/expandlayout"
+        app:ael_duration="400"
+        android:layout_marginTop="10dp"
+        app:ael_expanded="false"
+        app:ael_interpolator="accelerate"
+        app:ael_orientation="vertical">
+
+
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+</LinearLayout>

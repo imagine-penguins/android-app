@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--&gt;-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="15dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="My Dashboard"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:textSize="32sp"-->
+<!--            android:textColor="#000000"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+
+<!--    </RelativeLayout>-->
+<!--///////////////////////////////////////////////-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="15dp"-->
+<!--                android:id="@+id/expandableButton1"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:background="@drawable/timedas"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="0.0px"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:clipToPadding="false"-->
+<!--                    android:clipChildren="false"-->
+
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:drawableTint="@color/colorSplashText"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:drawableRight="@drawable/droparrow"-->
+<!--                        android:text="CALENDAR"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                android:id="@+id/expandableLayout1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/expandableButton1"-->
+<!--                android:background="@drawable/expandlayout"-->
+<!--                app:ael_duration="400"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:ael_expanded="false"-->
+<!--                app:ael_interpolator="accelerate"-->
+<!--                app:ael_orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/currentclass"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Today Event"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:textColor="@color/colorTextView"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/currenttime"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="09:45am - 10:40am"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:textColor="@color/colorTextView"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/classha"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="No Event For Today"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_below="@id/currentclass"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textColor="@color/colorBackground"-->
+<!--                    />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:id="@+id/viewh"-->
+<!--                    android:background="@color/colorTextView"-->
+<!--                    android:layout_below="@id/classha"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/upclass"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Upcoming Event"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_below="@id/viewh"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:textColor="@color/colorTextView"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/uptime"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="08:45am - 12:10pm"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_below="@id/viewh"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:textColor="@color/colorTextView"-->
+<!--                    />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/upha"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Meeting With Vice President"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginLeft="30dp"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_below="@id/upclass"-->
+<!--                    android:layout_alignParentLeft="true"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textColor="@color/colorBackground"-->
+
+<!--                    />-->
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/timetableall"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="View All"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_below="@id/upha"-->
+<!--                    android:background="@drawable/cornerbutton"-->
+<!--                    android:textColor="@color/colorSplashText"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    />-->
+
+
+<!--            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+<!--            ///////////////////////////////////////////////////////-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="15dp"-->
+<!--                android:id="@+id/expandableButton2"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:background="@drawable/announcementdas"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="0.0px"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:clipToPadding="false"-->
+<!--                    android:clipChildren="false"-->
+
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:drawableTint="@color/colorSplashText"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:drawableRight="@drawable/droparrow"-->
+<!--                        android:text="TAKE ATTENDENCE"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                android:id="@+id/expandableLayout2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/expandableButton2"-->
+<!--                android:background="@drawable/expandlayout"-->
+<!--                app:ael_duration="400"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:ael_expanded="false"-->
+<!--                app:ael_interpolator="accelerate"-->
+<!--                app:ael_orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginEnd="10dp"-->
+<!--                        app:cardCornerRadius="18dp">-->
+
+<!--                        <Spinner-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            />-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/relone"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:padding="6dp">-->
+
+<!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                            android:id="@+id/icon"-->
+<!--                            android:layout_width="46dp"-->
+<!--                            android:layout_height="46dp"-->
+<!--                            android:layout_marginRight="6dp"-->
+<!--                            app:civ_border_width="0.5dp"-->
+<!--                            app:civ_border_color="@color/blue"-->
+<!--                            android:layout_marginEnd="6dp"-->
+<!--                            android:src="@drawable/menprofile"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_name_txt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/icon"-->
+<!--                            android:layout_toEndOf="@+id/icon"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Jan Koum"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <com.nightonke.jellytogglebutton.JellyToggleButton-->
+<!--                            android:id="@+id/jt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:jtbLeftBackgroundColor="@color/grey"-->
+<!--                            app:jtbRightBackgroundColor="@color/grey"-->
+<!--                            app:jtbLeftThumbColor="@color/bottomNavigationSelectedColor"-->
+<!--                            app:jtbRightThumbColor="@color/lnewdark"-->
+<!--                            app:jtbLeftTextColor="@android:color/black"-->
+<!--                            app:jtbRightTextColor="@android:color/white"-->
+<!--                            app:jtbLeftText="A"-->
+<!--                            app:jtbDuration="500"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            app:jtbRightText="P"-->
+<!--                            app:jtbLeftTextSize="12sp"-->
+<!--                            app:jtbRightTextSize="12sp"-->
+<!--                            app:jtbTextMarginLeft="10dp"-->
+<!--                            app:jtbTextMarginRight="10dp"-->
+<!--                            app:jtbTextMarginBottom="2dp"-->
+<!--                            app:jtbTextMarginTop="2dp"-->
+<!--                            app:jtbTextMarginCenter="4dp"-->
+<!--                            />-->
+
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_description"-->
+<!--                            android:layout_below="@id/chat_name_txt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/icon"-->
+<!--                            android:layout_toEndOf="@+id/icon"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:layout_marginTop="4dp"-->
+<!--                            android:text="Head Staff Manager"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_marginLeft="55dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:background="@color/grey"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_below="@id/chat_description"/>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/relonet"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:padding="6dp">-->
+
+<!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                            android:id="@+id/icont"-->
+<!--                            android:layout_width="46dp"-->
+<!--                            android:layout_height="46dp"-->
+<!--                            android:layout_marginRight="6dp"-->
+<!--                            app:civ_border_width="0.5dp"-->
+<!--                            app:civ_border_color="@color/blue"-->
+<!--                            android:layout_marginEnd="6dp"-->
+<!--                            android:src="@drawable/menprofile"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_name_txtt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/icont"-->
+<!--                            android:layout_toEndOf="@+id/icont"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Jan Koum"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <com.nightonke.jellytogglebutton.JellyToggleButton-->
+<!--                            android:id="@+id/jtt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:jtbLeftBackgroundColor="@color/grey"-->
+<!--                            app:jtbRightBackgroundColor="@color/grey"-->
+<!--                            app:jtbLeftThumbColor="@color/bottomNavigationSelectedColor"-->
+<!--                            app:jtbRightThumbColor="@color/lnewdark"-->
+<!--                            app:jtbLeftTextColor="@android:color/black"-->
+<!--                            app:jtbRightTextColor="@android:color/white"-->
+<!--                            app:jtbLeftText="A"-->
+<!--                            app:jtbDuration="500"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            app:jtbRightText="P"-->
+<!--                            app:jtbLeftTextSize="12sp"-->
+<!--                            app:jtbRightTextSize="12sp"-->
+<!--                            app:jtbTextMarginLeft="10dp"-->
+<!--                            app:jtbTextMarginRight="10dp"-->
+<!--                            app:jtbTextMarginBottom="2dp"-->
+<!--                            app:jtbTextMarginTop="2dp"-->
+<!--                            app:jtbTextMarginCenter="4dp"-->
+<!--                            />-->
+
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_descriptiont"-->
+<!--                            android:layout_below="@id/chat_name_txtt"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/icont"-->
+<!--                            android:layout_toEndOf="@+id/icont"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:layout_marginTop="4dp"-->
+<!--                            android:text="Head Staff Manager"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_marginLeft="55dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:background="@color/grey"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_below="@id/chat_descriptiont"/>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/reloneth"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:padding="6dp">-->
+
+<!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                            android:id="@+id/iconth"-->
+<!--                            android:layout_width="46dp"-->
+<!--                            android:layout_height="46dp"-->
+<!--                            android:layout_marginRight="6dp"-->
+<!--                            app:civ_border_width="0.5dp"-->
+<!--                            app:civ_border_color="@color/blue"-->
+<!--                            android:layout_marginEnd="6dp"-->
+<!--                            android:src="@drawable/menprofile"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_name_txtth"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconth"-->
+<!--                            android:layout_toEndOf="@+id/iconth"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Jan Koum"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <com.nightonke.jellytogglebutton.JellyToggleButton-->
+<!--                            android:id="@+id/jtth"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:jtbLeftBackgroundColor="@color/grey"-->
+<!--                            app:jtbRightBackgroundColor="@color/grey"-->
+<!--                            app:jtbLeftThumbColor="@color/bottomNavigationSelectedColor"-->
+<!--                            app:jtbRightThumbColor="@color/lnewdark"-->
+<!--                            app:jtbLeftTextColor="@android:color/black"-->
+<!--                            app:jtbRightTextColor="@android:color/white"-->
+<!--                            app:jtbLeftText="A"-->
+<!--                            app:jtbDuration="500"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            app:jtbRightText="P"-->
+<!--                            app:jtbLeftTextSize="12sp"-->
+<!--                            app:jtbRightTextSize="12sp"-->
+<!--                            app:jtbTextMarginLeft="10dp"-->
+<!--                            app:jtbTextMarginRight="10dp"-->
+<!--                            app:jtbTextMarginBottom="2dp"-->
+<!--                            app:jtbTextMarginTop="2dp"-->
+<!--                            app:jtbTextMarginCenter="4dp"-->
+<!--                            />-->
+
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_descriptionth"-->
+<!--                            android:layout_below="@id/chat_name_txtth"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconth"-->
+<!--                            android:layout_toEndOf="@+id/iconth"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:layout_marginTop="4dp"-->
+<!--                            android:text="Head Staff Manager"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_marginLeft="55dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:background="@color/grey"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_below="@id/chat_descriptionth"/>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/relonef"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:padding="6dp">-->
+
+<!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                            android:id="@+id/iconf"-->
+<!--                            android:layout_width="46dp"-->
+<!--                            android:layout_height="46dp"-->
+<!--                            android:layout_marginRight="6dp"-->
+<!--                            app:civ_border_width="0.5dp"-->
+<!--                            app:civ_border_color="@color/blue"-->
+<!--                            android:layout_marginEnd="6dp"-->
+<!--                            android:src="@drawable/menprofile"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_name_txtf"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconf"-->
+<!--                            android:layout_toEndOf="@+id/iconf"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Jan Koum"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:textSize="16sp" />-->
+
+<!--                        <com.nightonke.jellytogglebutton.JellyToggleButton-->
+<!--                            android:id="@+id/jtf"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            app:jtbLeftBackgroundColor="@color/grey"-->
+<!--                            app:jtbRightBackgroundColor="@color/grey"-->
+<!--                            app:jtbLeftThumbColor="@color/bottomNavigationSelectedColor"-->
+<!--                            app:jtbRightThumbColor="@color/lnewdark"-->
+<!--                            app:jtbLeftTextColor="@android:color/black"-->
+<!--                            app:jtbRightTextColor="@android:color/white"-->
+<!--                            app:jtbLeftText="A"-->
+<!--                            app:jtbDuration="500"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            app:jtbRightText="P"-->
+<!--                            app:jtbLeftTextSize="12sp"-->
+<!--                            app:jtbRightTextSize="12sp"-->
+<!--                            app:jtbTextMarginLeft="10dp"-->
+<!--                            app:jtbTextMarginRight="10dp"-->
+<!--                            app:jtbTextMarginBottom="2dp"-->
+<!--                            app:jtbTextMarginTop="2dp"-->
+<!--                            app:jtbTextMarginCenter="4dp"-->
+<!--                            />-->
+
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_descriptionf"-->
+<!--                            android:layout_below="@id/chat_name_txtf"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconf"-->
+<!--                            android:layout_toEndOf="@+id/iconf"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:layout_marginTop="4dp"-->
+<!--                            android:text="Head Staff Manager"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_marginLeft="55dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:background="@color/grey"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_below="@id/chat_descriptionf"/>-->
+<!--                    </RelativeLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+<!--            ///////////////////////////////////////////////////////////////////-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="15dp"-->
+<!--                android:id="@+id/expandableButton3"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:background="@drawable/timedas"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="0.0px"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:clipToPadding="false"-->
+<!--                    android:clipChildren="false"-->
+
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:drawableTint="@color/colorSplashText"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:drawableRight="@drawable/droparrow"-->
+<!--                        android:text="PENDING APPPROVAL"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                android:id="@+id/expandableLayout3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/expandableButton3"-->
+<!--                android:background="@drawable/expandlayout"-->
+<!--                app:ael_duration="400"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:ael_expanded="false"-->
+<!--                app:ael_interpolator="accelerate"-->
+<!--                app:ael_orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    >-->
+<!--                <androidx.cardview.widget.CardView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    app:cardCornerRadius="18dp">-->
+
+<!--                    <Spinner-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        />-->
+
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/reloneap"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:padding="6dp">-->
+
+<!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                        android:id="@+id/iconap"-->
+<!--                        android:layout_width="46dp"-->
+<!--                        android:layout_height="46dp"-->
+<!--                        android:layout_marginRight="6dp"-->
+<!--                        app:civ_border_width="0.5dp"-->
+<!--                        app:civ_border_color="@color/blue"-->
+<!--                        android:layout_marginEnd="6dp"-->
+<!--                        android:src="@drawable/menprofile"/>-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/chat_name_txtap"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toRightOf="@id/iconap"-->
+<!--                        android:layout_toEndOf="@+id/iconap"-->
+<!--                        android:gravity="center_vertical"-->
+<!--                        android:text="Pradeep Mehto"-->
+<!--                        android:textColor="@color/colorBackground"-->
+<!--                        android:textSize="16sp" />-->
+
+<!--&lt;!&ndash;                    <com.nightonke.jellytogglebutton.JellyToggleButton&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/jtap"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftBackgroundColor="@color/grey"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightBackgroundColor="@color/grey"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftThumbColor="@color/bottomNavigationSelectedColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightThumbColor="@color/lnewdark"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftTextColor="@android:color/black"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightTextColor="@android:color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftText="Approve"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbDuration="500"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightText="P"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbLeftTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbRightTextSize="12sp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginRight="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginBottom="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginTop="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        app:jtbTextMarginCenter="4dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        />&ndash;&gt;-->
+<!--                    <com.nightonke.faceofftogglebutton.FaceOffToggleButton-->
+<!--                        android:id="@+id/fotb_0"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="35dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        />-->
+
+
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/chat_descriptionap"-->
+<!--                        android:layout_below="@id/chat_name_txtap"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toRightOf="@id/iconap"-->
+<!--                        android:layout_toEndOf="@+id/iconap"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:textColor="@color/colorBackground"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="Math Teacher"-->
+<!--                        android:textSize="12sp" />-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/chat_descriptionaph"-->
+<!--                        android:layout_below="@id/chat_descriptionap"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toRightOf="@id/iconap"-->
+<!--                        android:layout_toEndOf="@+id/iconap"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:textColor="@color/colorBackground"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:layout_marginTop="4dp"-->
+<!--                        android:text="Annoucement Approval Request"-->
+<!--                        android:textSize="12sp" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="1dp"-->
+<!--                        android:layout_marginLeft="55dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:background="@color/grey"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_below="@id/chat_descriptionaph"/>-->
+
+<!--                </RelativeLayout>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+<!--            ////////////////////////////////////////////////////////////////////-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="15dp"-->
+<!--                android:id="@+id/expandableButton4"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:background="@drawable/feesdas"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="0.0px"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:clipToPadding="false"-->
+<!--                    android:clipChildren="false"-->
+
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:drawableTint="@color/colorSplashText"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:drawableRight="@drawable/droparrow"-->
+<!--                        android:text="ARRANGEMENT'S"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                android:id="@+id/expandableLayout4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/expandableButton4"-->
+<!--                android:background="@drawable/expandlayout"-->
+<!--                app:ael_duration="400"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:ael_expanded="false"-->
+<!--                app:ael_interpolator="accelerate"-->
+<!--                app:ael_orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Arrange Replacement For Absent Teachers"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:layout_gravity="center_horizontal"-->
+<!--                        android:textColor="@color/colorBackground"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"/>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/reloneapl"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:padding="6dp">-->
+
+<!--                        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                            android:id="@+id/iconapl"-->
+<!--                            android:layout_width="46dp"-->
+<!--                            android:layout_height="46dp"-->
+<!--                            android:layout_marginRight="6dp"-->
+<!--                            app:civ_border_width="0.5dp"-->
+<!--                            app:civ_border_color="@color/blue"-->
+<!--                            android:layout_marginEnd="6dp"-->
+<!--                            android:src="@drawable/menprofile"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_name_txtapl"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconapl"-->
+<!--                            android:layout_toEndOf="@+id/iconapl"-->
+<!--                            android:gravity="center_vertical"-->
+<!--                            android:text="Pradeep Mehto"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:textSize="16sp" />-->
+
+
+<!--                        <androidx.cardview.widget.CardView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:minWidth="120dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            app:cardCornerRadius="18dp">-->
+
+<!--                            <Spinner-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="40dp"-->
+<!--                                />-->
+
+<!--                        </androidx.cardview.widget.CardView>-->
+
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_descriptionapl"-->
+<!--                            android:layout_below="@id/chat_name_txtapl"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconapl"-->
+<!--                            android:layout_toEndOf="@+id/iconapl"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:layout_marginTop="4dp"-->
+<!--                            android:text="Math Teacher"-->
+<!--                            android:textSize="12sp" />-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/chat_descriptionaphl"-->
+<!--                            android:layout_below="@id/chat_descriptionapl"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_toRightOf="@id/iconapl"-->
+<!--                            android:layout_toEndOf="@+id/iconapl"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:textColor="@color/colorBackground"-->
+<!--                            android:maxLines="1"-->
+<!--                            android:layout_marginTop="4dp"-->
+<!--                            android:text="Suffering from fever Kindly Approve My Reuest"-->
+<!--                            android:textSize="12sp" />-->
+
+<!--                        <View-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="1dp"-->
+<!--                            android:layout_marginLeft="55dp"-->
+<!--                            android:layout_marginBottom="5dp"-->
+<!--                            android:background="@color/grey"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_below="@id/chat_descriptionaphl"/>-->
+
+<!--                    </RelativeLayout>-->
+<!--                </LinearLayout>-->
+
+
+<!--            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+<!--            /////////////////////////////////////////////////-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="15dp"-->
+<!--                android:id="@+id/expandableButton5"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:background="@drawable/leavedas"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="0.0px"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:clipToPadding="false"-->
+<!--                    android:clipChildren="false"-->
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:drawableTint="@color/colorSplashText"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:drawableRight="@drawable/droparrow"-->
+<!--                        android:text="LEAVE REUEST'S"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                android:id="@+id/expandableLayout5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/expandableButton5"-->
+<!--                android:background="@drawable/expandlayout"-->
+<!--                app:ael_duration="400"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:ael_expanded="false"-->
+<!--                app:ael_interpolator="accelerate"-->
+<!--                app:ael_orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/lev"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Select Leave Time Period"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:textColor="@color/colorBackground"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/rel2"-->
+<!--                    android:layout_below="@id/lev"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    >-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/name_text_input"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/in_date"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="select From Date" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/name_text_inputt"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_below="@id/name_text_input"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/in_time"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Select To Date" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/name_text_inputth"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_below="@id/name_text_inputt"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/in_reason"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Mention Reason" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                </RelativeLayout>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/leavesubmit"-->
+<!--                    android:layout_width="200dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="SUBMIT"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:textColor="@color/colorSplashText"-->
+<!--                    android:background="@drawable/cornerbutton"-->
+<!--                    android:layout_below="@+id/rel2"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_below="@id/leavesubmit"-->
+<!--                    android:background="@color/colorSplashText"-->
+<!--                    android:orientation="vertical"/>-->
+
+<!--            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+<!--            ////////////////////////////////-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="15dp"-->
+<!--                android:id="@+id/expandableButton6"-->
+<!--                app:cardPreventCornerOverlap="true"-->
+<!--                android:layout_marginTop="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:background="@drawable/announcementdas"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:divider="@android:color/transparent"-->
+<!--                    android:dividerHeight="0.0px"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:clipToPadding="false"-->
+<!--                    android:clipChildren="false"-->
+
+<!--                    >-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:drawableTint="@color/colorSplashText"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:gravity="center"-->
+<!--                        android:textSize="22sp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:drawableRight="@drawable/droparrow"-->
+<!--                        android:text="ANNOUNCEMENTS"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                android:id="@+id/expandableLayout6"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/expandableButton6"-->
+<!--                android:background="@drawable/expandlayout"-->
+<!--                android:padding="16dp"-->
+<!--                app:ael_duration="400"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                app:ael_expanded="false"-->
+<!--                app:ael_interpolator="accelerate"-->
+<!--                app:ael_orientation="vertical">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    >-->
+<!--                    <androidx.cardview.widget.CardView-->
+<!--                        android:id="@+id/ccanno"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        app:cardCornerRadius="18dp">-->
+
+<!--                        <Spinner-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            />-->
+
+<!--                    </androidx.cardview.widget.CardView>-->
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/name_text_inputthj"-->
+<!--                        android:layout_below="@+id/ccanno"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/in_reasonj"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Title" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/name_text_inputthi"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_below="@id/name_text_inputthj"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        >-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/in_reasoni"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:hint="Caption" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+<!--                    <Button-->
+<!--                        android:id="@+id/anouc6"-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:text="Submit"-->
+<!--                        android:padding="15dp"-->
+<!--                        android:layout_below="@+id/name_text_inputthi"-->
+<!--                        android:background="@drawable/cornerbutton"-->
+<!--                        android:textColor="@color/colorSplashText"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/levlj"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/anouc6"-->
+<!--                        android:text="View History"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:textColor="@color/colorBackground"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"/>-->
+<!--                </RelativeLayout>-->
+<!--            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+<!--            //////////////////////////////////////////////////////////////////////-->
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="vertical"/>
+    </LinearLayout>
+
